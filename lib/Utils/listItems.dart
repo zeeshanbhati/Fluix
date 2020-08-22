@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 List<String> uiNames = [
-  "Authentication", "Settings", "Profile", "Dashboard", "Drawer", "Navigation", "Lists", "Grids"
+  "Authentication", "Drawer", "Navigation", "Lists", "Grids", "Settings", "Profile", "Dashboard",
 ];
 
 List<IconData> uiLogos = [

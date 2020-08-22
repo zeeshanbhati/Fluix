@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:dynamic_theme/dynamic_theme.dart';
-import 'package:fluix/Drawer/Drawer1.dart';
 import 'package:fluix/Screens/Home.dart';
 import 'package:fluix/Utils/Theme.dart';
 import 'package:flutter/material.dart';

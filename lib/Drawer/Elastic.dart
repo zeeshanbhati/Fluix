@@ -3,15 +3,14 @@ import 'package:fluix/Components/DrawerPainter.dart';
 import 'package:fluix/Utils/Theme.dart';
 import 'package:flutter/material.dart';
 
-class Drawer1 extends StatefulWidget {
-  static final String id = "Drawer1";
-  static final String path = "lib/Lists/Drawer1.dart";
+class Elastic extends StatefulWidget {
+  static final String path = "lib/Drawer/Elastic.dart";
 
   @override
-  _Drawer1State createState() => _Drawer1State();
+  _ElasticState createState() => _ElasticState();
 }
 
-class _Drawer1State extends State<Drawer1> {
+class _ElasticState extends State<Elastic> {
 
   Offset _offset = Offset(0,0);
   bool isMenuOpen = false;

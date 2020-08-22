@@ -1,17 +1,16 @@
-import 'package:fluix/Authentication/SignUp1.dart';
+import 'package:fluix/Authentication/SimpleS.dart';
 import 'package:fluix/Components/Raisedbtn.dart';
 import 'package:fluix/Components/TextField.dart';
 import 'package:flutter/material.dart';
 
-class Login1 extends StatefulWidget {
-  static final String id = "Login1";
-  static final String path = "lib/Authentication/Login1.dart";
+class Simple extends StatefulWidget {
+  static final String path = "lib/Authentication/Simple.dart";
 
   @override
-  _Login1State createState() => _Login1State();
+  _SimpleState createState() => _SimpleState();
 }
 
-class _Login1State extends State<Login1> {
+class _SimpleState extends State<Simple> {
   FocusNode usernameFN, passwordFN;
   String username, password;
 
@@ -61,7 +60,7 @@ class _Login1State extends State<Login1> {
                 children: <Widget>[
                   Text("Don't have an account? ", style: TextStyle(color: Colors.black87,),),
                   GestureDetector(
-                    onTap: () {Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignUp1()));},
+                    onTap: () {Navigator.of(context).push(MaterialPageRoute(builder: (context) => SimpleS()));},
                     child: Text("Sign Up", style: TextStyle(color: Colors.blue, fontWeight: FontWeight.w600),),
                   ),
                 ],
