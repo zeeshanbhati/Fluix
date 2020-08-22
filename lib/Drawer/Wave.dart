@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:wave_drawer/wave_drawer.dart';
 
+//TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN
+
 class Wave extends StatefulWidget {
   static final String path = "lib/Drawer/Wave.dart";
   @override

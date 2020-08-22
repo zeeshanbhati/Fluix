@@ -3,6 +3,9 @@ import 'package:fluix/Components/Raisedbtn.dart';
 import 'package:fluix/Components/TextField.dart';
 import 'package:flutter/material.dart';
 
+
+//TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN
+
 class SimpleS extends StatefulWidget {
   static final String path = "lib/Authentication/SimpleS.dart";
 

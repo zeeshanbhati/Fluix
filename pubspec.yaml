@@ -23,6 +23,20 @@ dependencies:
   flutter_staggered_grid_view:
   transparent_image:
   wave_drawer:
+  cached_network_image:
+  google_fonts: ^1.1.0
+  curved_navigation_bar: ^0.3.3
+  convex_bottom_bar: ^2.4.1
+  circle_bottom_navigation: ^1.0.6
+  google_nav_bar: ^2.2.0
+  line_icons: ^0.2.0
+  flutter_bloc: ^2.1.1
+  hidden_drawer_menu: ^2.0.1
+  foldable_sidebar: ^1.0.0
+  swipedetector: ^1.2.0
+  flare_flutter: ^2.0.6
+  smart_flare: ^0.2.9+1
+
 
 dev_dependencies:
   flutter_test:

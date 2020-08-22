@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 
 Widget dashboardCard (String text, String img, BuildContext context) {
   bool isScrolling = Provider.of<ScrollNotifier>(context).isScrolling;
+  Size screenSize = MediaQuery.of(context).size;
   return Padding(
     padding: const EdgeInsets.only(left: 10, right: 10),
     child: TweenAnimationBuilder(
@@ -30,8 +31,12 @@ Widget dashboardCard (String text, String img, BuildContext context) {
                   Container(
                     width: MediaQuery.of(context).size.width,
                     child: ClipRRect(
+
                       borderRadius: BorderRadius.circular(30),
-                      child: Opacity(opacity: 0.6, child: FittedBox(fit: BoxFit.fill, child: FadeInImage.assetNetwork(placeholder: "images/logo.png", image: img,))),
+                      child: Opacity(opacity: 0.6, child: Container(
+                        child: FittedBox(fit: BoxFit.fill,
+                          child: FadeInImage.assetNetwork(placeholder: "images/logo.png", image: img,height: screenSize.height/5,width:screenSize.width/1.6,),),
+                      )),
                     ),
                   ),
                   Positioned(
