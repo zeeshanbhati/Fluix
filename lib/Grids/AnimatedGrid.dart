@@ -1,13 +1,10 @@
+import 'package:fluix/Components/CustomAppBar.dart';
 import 'package:flutter/material.dart';
 
 //TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN
 
 class AnimatedGrid extends StatefulWidget {
   static final String path = "lib/Grids/AnimatedGrid.dart";
-
-  AnimatedGrid({Key key, this.title}) : super(key: key);
-  final String title;
-
   @override
   _AnimatedGridState createState() => _AnimatedGridState();
 }
@@ -26,8 +23,9 @@ class _AnimatedGridState extends State<AnimatedGrid> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(widget.title),
+        appBar: PreferredSize(
+          child: CustomAppBar(),
+          preferredSize: Size.fromHeight(56),
         ),
         body: GridView.builder(
             gridDelegate:

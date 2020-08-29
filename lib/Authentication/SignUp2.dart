@@ -4,17 +4,12 @@ import 'package:flutter/material.dart';
 //TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN
 
 class SignUp2 extends StatefulWidget {
-  static final String id = "Signup2";
+  static final String path = "lib/Authentication/Signup2";
   @override
   _SignUp2State createState() => _SignUp2State();
 }
 
-
-
 class _SignUp2State extends State<SignUp2> {
-
-
-
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -22,8 +17,7 @@ class _SignUp2State extends State<SignUp2> {
     return Scaffold(
       body: CustomPaint(
         painter: BackgroundSignup(),
-        child: Stack(
-          children:[
+        child: Stack(children: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 35.0),
             child: Column(
@@ -31,18 +25,17 @@ class _SignUp2State extends State<SignUp2> {
                 _getWelcomeText(screenSize),
                 _getTextFields(screenSize),
                 _signInbar(screenSize),
-                _bottombar(screenSize,context)
+                _bottombar(screenSize, context)
               ],
             ),
           ),
-                ]),
+        ]),
       ),
     );
   }
 
-  _bottombar(Size screenSize,BuildContext context){
+  _bottombar(Size screenSize, BuildContext context) {
     return Expanded(
-
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -55,21 +48,27 @@ class _SignUp2State extends State<SignUp2> {
                   decoration: TextDecoration.underline,
                   color: Colors.white),
             ),
-            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context)=> Login2())),
+            onTap: () => Navigator.of(context).pushNamed(Login2.path),
           ),
         ],
       ),
     );
   }
 
-  _signInbar(Size screenSize){
+  _signInbar(Size screenSize) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text("Sign Up",style: TextStyle(fontSize: screenSize.aspectRatio*50,fontWeight: FontWeight.w500,color: Colors.white),),
+        Text(
+          "Sign Up",
+          style: TextStyle(
+              fontSize: screenSize.aspectRatio * 50,
+              fontWeight: FontWeight.w500,
+              color: Colors.white),
+        ),
         CircleAvatar(
           backgroundColor: Colors.grey.shade800,
-          radius:40,
+          radius: 40,
           child: Icon(
             Icons.arrow_forward,
             color: Colors.white,
@@ -79,26 +78,29 @@ class _SignUp2State extends State<SignUp2> {
     );
   }
 
-  _getWelcomeText(Size screenSize){
+  _getWelcomeText(Size screenSize) {
     return Expanded(
-      flex:2,
+      flex: 2,
       child: Container(
         alignment: Alignment.bottomLeft,
-        child: Text("Create\nAccount",style: TextStyle(color: Colors.white,fontSize: screenSize.height/21),),
+        child: Text(
+          "Create\nAccount",
+          style:
+              TextStyle(color: Colors.white, fontSize: screenSize.height / 21),
+        ),
       ),
     );
   }
 
-  _getTextFields(Size screenSize){
+  _getTextFields(Size screenSize) {
     return Flexible(
       flex: 6,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           SizedBox(
-            height:screenSize.height/50,
+            height: screenSize.height / 50,
           ),
-
           TextField(
             decoration: InputDecoration(
                 labelText: 'Name',
@@ -106,11 +108,9 @@ class _SignUp2State extends State<SignUp2> {
                 enabledBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.white))),
           ),
-
           SizedBox(
-            height: screenSize.height/50,
+            height: screenSize.height / 50,
           ),
-
           TextField(
             decoration: InputDecoration(
                 labelText: 'Email',
@@ -118,11 +118,9 @@ class _SignUp2State extends State<SignUp2> {
                 enabledBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.white))),
           ),
-
           SizedBox(
-            height: screenSize.height/50,
+            height: screenSize.height / 50,
           ),
-
           TextField(
             decoration: InputDecoration(
                 labelText: 'Password',
@@ -130,22 +128,19 @@ class _SignUp2State extends State<SignUp2> {
                 enabledBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.white))),
           ),
-
           SizedBox(
-            height:screenSize.height/50,
+            height: screenSize.height / 50,
           ),
         ],
       ),
     );
   }
-
 }
 
-
-class BackgroundSignup extends CustomPainter{
+class BackgroundSignup extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    var sw= size.width;
+    var sw = size.width;
     var sh = size.height;
     var paint = Paint();
 
@@ -156,17 +151,16 @@ class BackgroundSignup extends CustomPainter{
 
     Path blueWave = Path();
     blueWave.lineTo(sw, 0);
-    blueWave.lineTo(sw, sh*0.65);
-    blueWave.cubicTo(sw*0.8, sh*0.8, sw*0.55, sh*0.8, sw*0.45, sh);
+    blueWave.lineTo(sw, sh * 0.65);
+    blueWave.cubicTo(sw * 0.8, sh * 0.8, sw * 0.55, sh * 0.8, sw * 0.45, sh);
     blueWave.lineTo(0, sh);
     paint.color = Colors.lightBlue.shade300;
     canvas.drawPath(blueWave, paint);
 
-
     Path greyWave = Path();
     greyWave.lineTo(sw, 0);
-    greyWave.lineTo(sw, sh*0.3);
-    greyWave.cubicTo(sw*0.65, sh*0.45, sw*0.25, sh*0.35, 0, sh*0.5);
+    greyWave.lineTo(sw, sh * 0.3);
+    greyWave.cubicTo(sw * 0.65, sh * 0.45, sw * 0.25, sh * 0.35, 0, sh * 0.5);
     greyWave.close();
     paint.color = Colors.grey.shade800;
     canvas.drawPath(greyWave, paint);
@@ -177,5 +171,4 @@ class BackgroundSignup extends CustomPainter{
     // TODO: implement shouldRepaint
     return oldDelegate != this;
   }
-
 }

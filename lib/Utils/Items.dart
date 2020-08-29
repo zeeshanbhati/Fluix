@@ -2,15 +2,15 @@ import 'package:fluix/Authentication/AnimatedLogin.dart';
 import 'package:fluix/Authentication/Login2.dart';
 import 'package:fluix/Authentication/Simple.dart';
 import 'package:fluix/Authentication/home1.dart';
-import 'package:fluix/Drawer/HiddenDrawer.dart';
-import 'package:fluix/Drawer/FoldableDrawer.dart';
+import 'package:fluix/Drawer/Foldable.dart';
+import 'package:fluix/Drawer/Hidden.dart';
 import 'package:fluix/Drawer/Elastic.dart';
 import 'package:fluix/Drawer/Wave.dart';
 import 'package:fluix/Grids/AnimatedGrid.dart';
 import 'package:fluix/Grids/Staggered.dart';
 import 'package:fluix/Lists/WheelScroll.dart';
-import 'package:fluix/Lists/slidelist.dart';
-import 'package:fluix/Lists/stacklist.dart';
+import 'package:fluix/Lists/Slidelist.dart';
+import 'package:fluix/Lists/Stacklist.dart';
 import 'package:fluix/Navigation/CircleBottomBar.dart';
 import 'package:fluix/Navigation/ConvexNavigaiton.dart';
 import 'package:fluix/Navigation/CurvedNavigation.dart';
@@ -28,29 +28,28 @@ class Items {
 List<Items> authentication = [
   Items("Simple", Simple(), Simple.path),
   Items("Animated", AnimatedLogin(), AnimatedLogin.path),
-  Items("Authentication 3",Home1(),Home1.id),
-  Items("Authentication 4",Login2(),Login2.id),
+  Items("Card Based", Home1(), Home1.path),
+  Items("Authentication 4", Login2(), Login2.path),
 ];
 
 List<Items> drawer = [
+  Items("Hidden", Drawer1(), Drawer1.path),
+  Items("Foldable", Foldable(), Foldable.path),
   Items("Elastic", Elastic(), Elastic.path),
   Items("Wave", Wave(), Wave.path),
-  Items("Hidden Drawer",Drawer1(),Drawer1.path),
-  Items("Foldable Drawer",FoldableDrawer(),FoldableDrawer.path),
 ];
 
 List<Items> navigation = [
-  Items("Navigation 1", Elastic(), Elastic.path),
-  Items("Curved Navigation Bar",CurvedNavigation(),CurvedNavigation.path),
-  Items("Circle Bottom Navigation",CircleBottomBar(),CircleBottomBar.path),
-  Items("Google Navigation Bar",GoogleBar(),GoogleBar.path),
-  Items("Convex Navigation Bar",ConvexNavigation(),ConvexNavigation.path),
+  Items("Curved", CurvedNavigation(), CurvedNavigation.path),
+  Items("Circular", CircleBottomBar(), CircleBottomBar.path),
+  Items("Google Bar", GoogleBar(), GoogleBar.path),
+  Items("Convexed", ConvexNavigation(), ConvexNavigation.path),
 ];
 
 List<Items> lists = [
   Items("Wheel Scroll", WheelScroll(), WheelScroll.path),
-  Items("Stack", StackList(), StackList.path),
-  Items("Slide", SlideList(), SlideList.path),
+  Items("Stacked", StackList(), StackList.path),
+  Items("Slideable", SlideList(), SlideList.path),
 ];
 
 List<Items> grids = [

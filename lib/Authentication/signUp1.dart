@@ -1,5 +1,5 @@
-import 'package:fluix/Components/customTextField.dart';
-import 'package:fluix/Components/rounded_button.dart';
+import 'package:fluix/Components/Roundedbtn.dart';
+import 'package:fluix/Components/TextFormField.dart';
 import 'package:fluix/Utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -8,7 +8,7 @@ import 'package:google_fonts/google_fonts.dart';
 //TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN
 
 class SignUp1 extends StatefulWidget {
-  static final String id = "SignUp1";
+  static final String path = "lib/Authentication/SignUp1";
 
   @override
   _SignUp1State createState() => _SignUp1State();
@@ -28,15 +28,15 @@ class _SignUp1State extends State<SignUp1> {
               width: screenSize.width,
               child: CachedNetworkImage(
                   imageUrl: imagesSource[0],
-                  imageBuilder: (context,imageProvider)=> Container(
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: imageProvider,
-                        fit: BoxFit.fill,
-                          colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.darken)
-                      )
-                    ),
-                  ),
+                  imageBuilder: (context, imageProvider) => Container(
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: imageProvider,
+                                fit: BoxFit.fill,
+                                colorFilter: new ColorFilter.mode(
+                                    Colors.black.withOpacity(0.6),
+                                    BlendMode.darken))),
+                      ),
                   placeholder: (context, url) => Container(
                         child: Center(child: CircularProgressIndicator()),
                       ),
@@ -50,7 +50,7 @@ class _SignUp1State extends State<SignUp1> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Hero(
-                      tag:"logo",
+                      tag: "logo",
                       child: Container(
                         height: 70.0,
                         width: 70.0,
@@ -72,14 +72,14 @@ class _SignUp1State extends State<SignUp1> {
             Positioned(
               bottom: 0,
               right: 0,
-              left:0,
+              left: 0,
               child: Container(
                 height: screenSize.height / 1.5,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(40.0),
-                      topRight: Radius.circular(40.0),
-                      ),
+                    topLeft: Radius.circular(40.0),
+                    topRight: Radius.circular(40.0),
+                  ),
                   color: Colors.white,
                 ),
                 child: Column(
@@ -124,7 +124,9 @@ class _SignUp1State extends State<SignUp1> {
                       padding: const EdgeInsets.all(10.0),
                       child: Center(
                           child: RoundedButton(
-                        onPressed: null,
+                        onPressed: () {
+                          //TODO: signup process here
+                        },
                         title: "Sign up",
                         colour: Colors.deepOrangeAccent,
                       )),

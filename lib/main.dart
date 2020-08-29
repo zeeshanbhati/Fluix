@@ -1,5 +1,17 @@
 import 'dart:async';
 import 'package:dynamic_theme/dynamic_theme.dart';
+import 'package:fluix/Authentication/AnimatedLogin.dart';
+import 'package:fluix/Authentication/AnimatedSignUp.dart';
+import 'package:fluix/Authentication/Login1.dart';
+import 'package:fluix/Authentication/Login2.dart';
+import 'package:fluix/Authentication/SignUp1.dart';
+import 'package:fluix/Authentication/SignUp2.dart';
+import 'package:fluix/Authentication/Simple.dart';
+import 'package:fluix/Authentication/SimpleS.dart';
+import 'package:fluix/DemoScreens/DemoScreen1.dart';
+import 'package:fluix/DemoScreens/DemoScreen2.dart';
+import 'package:fluix/DemoScreens/DemoScreen3.dart';
+import 'package:fluix/DemoScreens/DemoScreen4.dart';
 import 'package:fluix/Screens/Home.dart';
 import 'package:fluix/Utils/Theme.dart';
 import 'package:flutter/material.dart';
@@ -18,6 +30,18 @@ void main() {
         initialRoute: '/',
         routes: {
           '/': (context) => Home(),
+          AnimatedLogin.path: (context) => AnimatedLogin(),
+          AnimatedSignUp.path: (context) => AnimatedSignUp(),
+          Login1.path: (context) => Login1(),
+          SignUp1.path: (context) => SignUp1(),
+          Login2.path: (context) => Login2(),
+          SignUp2.path: (context) => SignUp2(),
+          Simple.path: (context) => Simple(),
+          SimpleS.path: (context) => SimpleS(),
+          DemoScreen1.path: (context) => DemoScreen1(),
+          DemoScreen2.path: (context) => DemoScreen2(),
+          DemoScreen3.path: (context) => DemoScreen3(),
+          DemoScreen4.path: (context) => DemoScreen4(),
         },
       ),
     ),

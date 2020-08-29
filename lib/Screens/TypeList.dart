@@ -17,14 +17,23 @@ class _TypeListState extends State<TypeList> {
 
   @override
   void initState() {
-    if(widget.type == "Authentication") {ui1 = authentication;}
-    else if(widget.type == "Settings") {ui1 = settings;}
-    else if(widget.type == "Profile") {ui1 = profile;}
-    else if(widget.type == "Dashboard") {ui1 = dashboard;}
-    else if(widget.type == "Drawer") {ui1 = drawer;}
-    else if(widget.type == "Navigation") {ui1 = navigation;}
-    else if(widget.type == "Lists") {ui1 = lists;}
-    else if(widget.type == "Grids") {ui1 = grids;}
+    if (widget.type == "Authentication") {
+      ui1 = authentication;
+    } else if (widget.type == "Settings") {
+      ui1 = settings;
+    } else if (widget.type == "Profile") {
+      ui1 = profile;
+    } else if (widget.type == "Dashboard") {
+      ui1 = dashboard;
+    } else if (widget.type == "Drawer") {
+      ui1 = drawer;
+    } else if (widget.type == "Navigation") {
+      ui1 = navigation;
+    } else if (widget.type == "Lists") {
+      ui1 = lists;
+    } else if (widget.type == "Grids") {
+      ui1 = grids;
+    }
     super.initState();
   }
 
@@ -32,12 +41,16 @@ class _TypeListState extends State<TypeList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        child: CustomAppBar(title: widget.type,),
+        child: CustomAppBar(
+          title: widget.type,
+        ),
         preferredSize: Size.fromHeight(56),
       ),
       body: Padding(
         padding: const EdgeInsets.all(10),
-        child: ListView(children: _buildItems(ui1, context),),
+        child: ListView(
+          children: _buildItems(ui1, context),
+        ),
       ),
     );
   }
@@ -51,15 +64,27 @@ List<Widget> _buildItems(List<Items> items, BuildContext context) {
 
 Widget _buildItem(Items item, BuildContext context) {
   return GestureDetector(
-    onTap: () {Navigator.of(context).push(MaterialPageRoute(builder: (context) => item.page));},
+    onTap: () {
+      Navigator.of(context)
+          .push(MaterialPageRoute(builder: (context) => item.page));
+    },
     child: Card(
       elevation: 5,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
       child: ListTile(
-        title: Text(item.title,),
-        leading: Icon(Icons.arrow_right, color: enableDarkMode ? Colors.teal : Colors.blue,),
-        trailing: IconButton(icon: Icon(Icons.code),
-          onPressed: () {Navigator.of(context).push(MaterialPageRoute(builder: (context) => PreviewCode(page: item.page)));},
+        title: Text(
+          item.title,
+        ),
+        leading: Icon(
+          Icons.arrow_right,
+          color: enableDarkMode ? Colors.teal : Colors.blue,
+        ),
+        trailing: IconButton(
+          icon: Icon(Icons.code),
+          onPressed: () {
+            Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => PreviewCode(page: item.page)));
+          },
         ),
       ),
     ),

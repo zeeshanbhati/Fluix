@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DemoScreen3 extends StatelessWidget {
-  static final String id = "DemoScreen3";
+class DemoScreen1 extends StatelessWidget {
+  static final String path = "lib/DemoScreens/DemoScreen1";
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
@@ -9,8 +9,8 @@ class DemoScreen3 extends StatelessWidget {
       body: Container(
         height: screenSize.height,
         width: screenSize.width,
-        color: Colors.orangeAccent,
-        child: Center(child: Text("DemoScreen3",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 20.0),)),
+        color: Colors.lightGreen,
+        child: Center(child: Text("DemoScreen1",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 20.0),)),
       ),
     );
   }

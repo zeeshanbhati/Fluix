@@ -1,3 +1,4 @@
+import 'package:fluix/Authentication/AnimatedSignUp.dart';
 import 'package:flutter/material.dart';
 import '../Components/form_box.dart';
 
@@ -88,7 +89,8 @@ class _AnimatedLoginState extends State<AnimatedLogin>
                 ),
                 SizedBox(height: 12),
                 Transform(
-                  transform: Matrix4.translationValues(0, animation3.value * _height, 0),
+                  transform: Matrix4.translationValues(
+                      0, animation3.value * _height, 0),
                   child: buildText(),
                 ),
                 SizedBox(height: 30),
@@ -101,8 +103,7 @@ class _AnimatedLoginState extends State<AnimatedLogin>
   Widget buildText() {
     return GestureDetector(
       onTap: () {
-        print('go to signup form');
-        Navigator.pushNamed(context, '/signup');
+        Navigator.pushNamed(context, AnimatedSignUp.path);
       },
       child: Text.rich(
         TextSpan(
@@ -110,13 +111,13 @@ class _AnimatedLoginState extends State<AnimatedLogin>
           style: TextStyle(fontFamily: 'Quicksand'),
           children: <TextSpan>[
             TextSpan(
-                text: 'Signup',
-                style: TextStyle(
-                  fontFamily: 'Quicksand',
-                  fontWeight: FontWeight.bold,
-                  decoration: TextDecoration.underline,
-                )),
-            // can add more TextSpans here...
+              text: 'Signup',
+              style: TextStyle(
+                fontFamily: 'Quicksand',
+                fontWeight: FontWeight.bold,
+                decoration: TextDecoration.underline,
+              ),
+            ),
           ],
         ),
         textAlign: TextAlign.center,

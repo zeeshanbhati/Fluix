@@ -9,7 +9,6 @@ class SlideAnimation extends StatefulWidget {
   final SlideDirection slideDirection;
   final AnimationController animationController;
 
-  // we have created a named parameter constructor
   SlideAnimation({
     @required this.position,
     @required this.itemCount,
@@ -29,13 +28,12 @@ class _SlideAnimationState extends State<SlideAnimation> {
     var _xTranslation = 0.0, _yTranslation = 0.0;
 
     // we need to declare our animation for fade transition widget
-    var _animation = Tween(begin: 0.0, end: 1.0).animate(
-        CurvedAnimation(
-          parent: widget.animationController,
-          // curve for the way you want to animate your list item widget. you can use anything from curves
-          curve: Interval((1 / widget.itemCount) * widget.position, 1.0, curve: Curves.fastOutSlowIn),
-        )
-    );
+    var _animation = Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+      parent: widget.animationController,
+      // curve for the way you want to animate your list item widget. you can use anything from curves
+      curve: Interval((1 / widget.itemCount) * widget.position, 1.0,
+          curve: Curves.fastOutSlowIn),
+    ));
 
     widget.animationController.forward();
 
@@ -61,7 +59,8 @@ class _SlideAnimationState extends State<SlideAnimation> {
           child: Transform(
             child: widget.child,
             // based on our slide direction and x and y values the widget will animate
-            transform: Matrix4.translationValues(_xTranslation, _yTranslation, 0.0),
+            transform:
+                Matrix4.translationValues(_xTranslation, _yTranslation, 0.0),
           ),
         );
       },
