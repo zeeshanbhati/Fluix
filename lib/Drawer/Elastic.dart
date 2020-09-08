@@ -13,13 +13,12 @@ class Elastic extends StatefulWidget {
 }
 
 class _ElasticState extends State<Elastic> {
-
-  Offset _offset = Offset(0,0);
+  Offset _offset = Offset(0, 0);
   bool isMenuOpen = false;
 
   @override
   Widget build(BuildContext context) {
-    double drawerwidth = MediaQuery.of(context).size.width*0.65;
+    double drawerwidth = MediaQuery.of(context).size.width * 0.65;
     double drawerheight = MediaQuery.of(context).size.height;
     return SafeArea(
       child: Scaffold(
@@ -38,18 +37,27 @@ class _ElasticState extends State<Elastic> {
                 width: drawerwidth,
                 child: GestureDetector(
                   onPanUpdate: (details) {
-                    if(details.localPosition.dx <= drawerwidth) {
-                      setState(() {_offset = details.localPosition;});
+                    if (details.localPosition.dx <= drawerwidth) {
+                      setState(() {
+                        _offset = details.localPosition;
+                      });
                     }
-                    if(details.localPosition.dx > drawerwidth-20 && details.delta.distanceSquared > 2) {
-                      setState(() {isMenuOpen = true;});
+                    if (details.localPosition.dx > drawerwidth - 20 &&
+                        details.delta.distanceSquared > 2) {
+                      setState(() {
+                        isMenuOpen = true;
+                      });
                     }
-                    if(details.localPosition.dx < drawerwidth-20) {
-                      setState(() {isMenuOpen = false;});
+                    if (details.localPosition.dx < drawerwidth - 20) {
+                      setState(() {
+                        isMenuOpen = false;
+                      });
                     }
                   },
                   onPanEnd: (details) {
-                    setState(() {_offset = Offset(0,0);});
+                    setState(() {
+                      _offset = Offset(0, 0);
+                    });
                   },
                   child: Stack(
                     children: <Widget>[
@@ -57,43 +65,75 @@ class _ElasticState extends State<Elastic> {
                         size: Size(drawerwidth, drawerheight),
                         painter: DrawerPainter(offset: _offset),
                       ),
-                      Container(
-                        child: Column(
-                          children: <Widget>[
-                            SizedBox(height: 20,),
-                            Container(
-                              height: 90,
-                              alignment: Alignment.center,
-                              child: CircleAvatar(
-                                radius: 40,
-                                child: Image.asset("images/logo.png", height: 60, width: 60,),
-                                backgroundColor: Colors.black,
+                      Padding(
+                        padding: const EdgeInsets.only(right: 10),
+                        child: Container(
+                          child: Column(
+                            children: <Widget>[
+                              SizedBox(
+                                height: 20,
                               ),
-                            ),
-                            SizedBox(height: 5.0),
-                            Text("FLUIX", style: TextStyle(color: Colors.white, fontSize: 18),),
-                            SizedBox(height: 30.0),
-                            _buildRow(Icons.person, "Profile", (){}),
-                            _buildDivider(),
-                            _buildRow(Icons.settings, "Settings", (){}),
-                            _buildDivider(),
-                            _buildRow(Icons.notifications, "Notifications", (){}),
-                            _buildDivider(),
-                            _buildRow(Icons.phone, "Contact us", (){}),
-                            _buildDivider(),
-                            _buildRow(Icons.info, "About", (){}),
-                            _buildDivider(),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: <Widget>[
-                                IconButton(
-                                  enableFeedback: true,
-                                  icon: Icon(Icons.arrow_back, color: enableDarkMode ? Colors.teal[200] : Colors.blue[200], size: 30,),
-                                  onPressed: (){isMenuOpen = false;},
+                              Container(
+                                height: 90,
+                                alignment: Alignment.center,
+                                child: CircleAvatar(
+                                  radius: 40,
+                                  child: Image.asset(
+                                    "images/logo.png",
+                                    height: 60,
+                                    width: 60,
+                                  ),
+                                  backgroundColor: Colors.black,
                                 ),
-                              ],
-                            ),
-                          ],
+                              ),
+                              SizedBox(height: 5.0),
+                              Text(
+                                "FLUIX",
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 18),
+                              ),
+                              SizedBox(height: 30.0),
+                              _buildRow(Icons.person, "Profile", () {
+                                //TODO: screen
+                              }),
+                              _buildDivider(),
+                              _buildRow(Icons.settings, "Settings", () {
+                                //TODO: screen
+                              }),
+                              _buildDivider(),
+                              _buildRow(Icons.notifications, "Notifications",
+                                  () {
+                                //TODO: screen
+                              }),
+                              _buildDivider(),
+                              _buildRow(Icons.phone, "Contact us", () {
+                                //TODO: screen
+                              }),
+                              _buildDivider(),
+                              _buildRow(Icons.info, "About", () {
+                                //TODO: screen
+                              }),
+                              _buildDivider(),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: <Widget>[
+                                  IconButton(
+                                    enableFeedback: true,
+                                    icon: Icon(
+                                      Icons.arrow_back,
+                                      color: enableDarkMode
+                                          ? Colors.teal[200]
+                                          : Colors.blue[200],
+                                      size: 30,
+                                    ),
+                                    onPressed: () {
+                                      isMenuOpen = false;
+                                    },
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ],
@@ -109,7 +149,9 @@ class _ElasticState extends State<Elastic> {
 }
 
 Divider _buildDivider() {
-  return Divider(color: enableDarkMode ? Colors.teal[200] : Colors.blue[200],);
+  return Divider(
+    color: enableDarkMode ? Colors.teal[200] : Colors.blue[200],
+  );
 }
 
 Widget _buildRow(IconData icon, String title, Function onTap) {
@@ -118,9 +160,17 @@ Widget _buildRow(IconData icon, String title, Function onTap) {
     child: Container(
       padding: const EdgeInsets.symmetric(vertical: 8.0),
       child: Row(children: [
-        Icon(icon, color: enableDarkMode ? Colors.teal[200] : Colors.blue[200],),
+        Icon(
+          icon,
+          color: enableDarkMode ? Colors.teal[200] : Colors.blue[200],
+        ),
         SizedBox(width: 10.0),
-        Text(title, style: TextStyle(color: enableDarkMode ? Colors.teal[200] : Colors.blue[200], fontSize: 16.0),),
+        Text(
+          title,
+          style: TextStyle(
+              color: enableDarkMode ? Colors.teal[200] : Colors.blue[200],
+              fontSize: 16.0),
+        ),
       ]),
     ),
   );

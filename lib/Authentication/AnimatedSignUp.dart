@@ -1,3 +1,5 @@
+import 'package:fluix/Components/CustomAppBar.dart';
+import 'package:fluix/Utils/Theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -56,13 +58,11 @@ class _AnimatedSignUpState extends State<AnimatedSignUp>
         parent: controller,
         curve: Interval(.9, 1.0, curve: Curves.fastOutSlowIn)));
 
-    sideAnimation1 = Tween(begin: -1.0, end: 0.0).animate(CurvedAnimation(
-        parent: controller,
-        curve: Curves.bounceInOut));
+    sideAnimation1 = Tween(begin: -1.0, end: 0.0).animate(
+        CurvedAnimation(parent: controller, curve: Curves.bounceInOut));
 
-    sideAnimation2 = Tween(begin: 1.0, end: 0).animate(CurvedAnimation(
-        parent: controller,
-        curve: Curves.bounceInOut));
+    sideAnimation2 = Tween(begin: 1.0, end: 0).animate(
+        CurvedAnimation(parent: controller, curve: Curves.bounceInOut));
   }
 
   @override
@@ -74,14 +74,9 @@ class _AnimatedSignUpState extends State<AnimatedSignUp>
         animation: controller,
         builder: (BuildContext context, Widget child) {
           return Scaffold(
-            appBar: AppBar(
-              backgroundColor: Color(0xFF0DA850),
-              title: Text(
-                'Hello!',
-                style: TextStyle(fontFamily: 'Quicksand'),
-              ),
-              centerTitle: true,
-              elevation: 0,
+            appBar: PreferredSize(
+              child: CustomAppBar(),
+              preferredSize: Size.fromHeight(56),
             ),
             body: ListView(
               shrinkWrap: true,
@@ -108,7 +103,7 @@ class _AnimatedSignUpState extends State<AnimatedSignUp>
                   children: <Widget>[
                     Transform(
                       transform: Matrix4.translationValues(
-                          sideAnimation1.value * _width, 0,0),
+                          sideAnimation1.value * _width, 0, 0),
                       child: GestureDetector(
                         onTap: () {
                           setState(() {
@@ -126,30 +121,31 @@ class _AnimatedSignUpState extends State<AnimatedSignUp>
                           });
                         },
                         child: genderBox(
-                            context, _color1, 'Male', 'assets/pics/male.png'),
+                            context, _color1, 'Male', 'images/male.png'),
                       ),
                     ),
                     Transform(
                       transform: Matrix4.translationValues(
                           sideAnimation2.value * _width, 0, 0),
                       child: GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              if (_gender == 'male')
-                                _gender = 'female';
-                              else
-                                _gender = 'male';
+                        onTap: () {
+                          setState(() {
+                            if (_gender == 'male')
+                              _gender = 'female';
+                            else
+                              _gender = 'male';
 
-                              _gender == 'male'
-                                  ? _color1 = Color(0xFF36BA7A)
-                                  : _color1 = Colors.white;
-                              _gender == 'male'
-                                  ? _color2 = Colors.white
-                                  : _color2 = Color(0xFF36BA7A);
-                            });
-                          },
-                          child: genderBox(context, _color2, 'Female',
-                              'assets/pics/female.png')),
+                            _gender == 'male'
+                                ? _color1 = Color(0xFF36BA7A)
+                                : _color1 = Colors.white;
+                            _gender == 'male'
+                                ? _color2 = Colors.white
+                                : _color2 = Color(0xFF36BA7A);
+                          });
+                        },
+                        child: genderBox(
+                            context, _color2, 'Female', 'images/female.png'),
+                      ),
                     ),
                   ],
                 ),
@@ -178,8 +174,13 @@ class _AnimatedSignUpState extends State<AnimatedSignUp>
       padding: EdgeInsets.only(left: 80, right: 80),
       child: MaterialButton(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-        onPressed: () {},
-        child: Text('NEXT', style: TextStyle(color: Colors.white),),
+        onPressed: () {
+          //TODO: add interactivity here
+        },
+        child: Text(
+          'NEXT',
+          style: TextStyle(color: Colors.white),
+        ),
         color: Color(0xFF36BA7A),
       ),
     );
@@ -189,12 +190,19 @@ class _AnimatedSignUpState extends State<AnimatedSignUp>
     return Container(
       margin: EdgeInsets.only(left: 20, right: 20),
       height: 180,
-      child: CupertinoDatePicker(
-        mode: CupertinoDatePickerMode.date,
-        onDateTimeChanged: (_) {},
-        initialDateTime: DateTime(2019),
-        maximumDate: DateTime(2030),
-        minimumDate: DateTime(2000),
+      child: CupertinoTheme(
+        data: CupertinoThemeData(
+          textTheme: CupertinoTextThemeData(
+              pickerTextStyle: TextStyle(
+                  color: enableDarkMode ? Colors.white : Colors.black)),
+        ),
+        child: CupertinoDatePicker(
+          mode: CupertinoDatePickerMode.date,
+          onDateTimeChanged: (_) {},
+          initialDateTime: DateTime(2019),
+          maximumDate: DateTime(2030),
+          minimumDate: DateTime(2000),
+        ),
       ),
     );
   }
@@ -205,7 +213,6 @@ class _AnimatedSignUpState extends State<AnimatedSignUp>
       child: Text(
         'Born in',
         style: TextStyle(
-          color: Colors.black,
           fontSize: 22,
           fontFamily: 'Quicksand',
           fontWeight: FontWeight.bold,
@@ -220,7 +227,6 @@ class _AnimatedSignUpState extends State<AnimatedSignUp>
       child: Text(
         'Gender',
         style: TextStyle(
-          color: Colors.black,
           fontSize: 22,
           fontFamily: 'Quicksand',
           fontWeight: FontWeight.bold,
@@ -238,7 +244,6 @@ class _AnimatedSignUpState extends State<AnimatedSignUp>
           child: Text(
             'Name',
             style: TextStyle(
-              color: Colors.black,
               fontSize: 22,
               fontFamily: 'Quicksand',
               fontWeight: FontWeight.bold,

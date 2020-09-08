@@ -63,13 +63,11 @@ class FormBox extends StatelessWidget {
           ],
         ),
         Positioned(
-          // top: 280,
-          // left: 190,
           top: 270,
           left: MediaQuery.of(context).size.width * .45,
           child: FloatingActionButton(
             onPressed: () {
-              print('login complete');
+              //TODO: login process here
             },
             heroTag: 'logintag',
             backgroundColor: Color(0xFF36BA7A),

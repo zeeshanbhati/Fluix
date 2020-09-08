@@ -1,3 +1,5 @@
+import 'package:fluix/Components/CustomAppBar.dart';
+import 'package:fluix/Utils/Theme.dart';
 import 'package:flutter/material.dart';
 import 'package:wave_drawer/wave_drawer.dart';
 
@@ -10,66 +12,52 @@ class Wave extends StatefulWidget {
 }
 
 class _WaveState extends State<Wave> {
-  int _count = 0;
-
-  void _incrementCount() {
-    setState(() {
-      _count++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color(0XFF4E5B81),
-        title: Text("Wave Drawer Example"),
+      appBar: PreferredSize(
+        child: CustomAppBar(),
+        preferredSize: Size.fromHeight(56),
       ),
       drawer: WaveDrawer(
         backgroundColor: Color(0XFF4E5B81),
-        boundaryColor: Colors.blue,
+        boundaryColor: enableDarkMode ? Colors.teal : Colors.blue,
         boundaryWidth: 8.0,
         child: ListView(
-          // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
-              child: Text(
-                'Drawer Header',
-                style: Theme.of(context).primaryTextTheme.headline6,
-              ),
+              child: Image.asset("images/logo.png"),
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: enableDarkMode ? Colors.teal : Colors.blue,
               ),
             ),
             ListTile(
-              title: Text(
-                'Item 1',
-                style: Theme.of(context).primaryTextTheme.headline6
-              ),
+              title: Text('Screen 1',
+                  style: Theme.of(context).primaryTextTheme.headline6),
               onTap: () {
-                // Update the state of the app.
-                // ...
+                //TODO: screen
               },
             ),
             ListTile(
-              title: Text('Item 2',
+              title: Text(
+                'Screen 2',
                 style: Theme.of(context).primaryTextTheme.headline6,
               ),
               onTap: () {
-                // Update the state of the app.
-                // ...
+                //TODO: screen
               },
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-          child: Center(child: Icon(Icons.add)),
-          onPressed: () => _incrementCount()),
       body: Container(
           color: Color(0XFF27314F),
-          child: Center(child: Text('You tapped the button $_count times',style: TextStyle(color: Colors.white),))),
+          child: Center(
+              child: Text(
+            "Demo Screen",
+            style: TextStyle(color: Colors.white),
+          ))),
     );
   }
 }

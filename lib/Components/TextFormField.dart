@@ -1,3 +1,4 @@
+import 'package:fluix/Utils/Theme.dart';
 import 'package:flutter/material.dart';
 
 class MyTextFormField extends StatelessWidget {
@@ -7,7 +8,8 @@ class MyTextFormField extends StatelessWidget {
   final bool isPassword;
   final IconData icon;
 
-  final bool isEmail;MyTextFormField({
+  final bool isEmail;
+  MyTextFormField({
     this.hintText,
     this.validator,
     this.onSaved,
@@ -23,26 +25,22 @@ class MyTextFormField extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 10.0),
         child: TextFormField(
           decoration: InputDecoration(
-            labelText: hintText,
-            prefixIcon: Icon(icon),
-           isDense: true,
-            labelStyle: TextStyle(letterSpacing: 1.0,fontSize: 15.0),
-            alignLabelWithHint: true,
-            prefixIconConstraints: BoxConstraints(maxHeight:3,minWidth:30),
-            enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Colors.deepOrangeAccent))
-            
-             
-            //contentPadding: EdgeInsets.all(15.0),
-            
-
-          ),
+              labelText: hintText,
+              prefixIcon: Icon(icon, color: Colors.blueGrey),
+              isDense: true,
+              labelStyle: TextStyle(letterSpacing: 1.0, fontSize: 15.0, color: Colors.blueGrey),
+              alignLabelWithHint: true,
+              prefixIconConstraints: BoxConstraints(maxHeight: 3, minWidth: 30),
+              enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.deepOrangeAccent))
+              ),
           obscureText: isPassword ? true : false,
           validator: validator,
           onSaved: onSaved,
-          keyboardType: isEmail ? TextInputType.emailAddress : TextInputType.text,
+          keyboardType:
+              isEmail ? TextInputType.emailAddress : TextInputType.text,
         ),
       ),
     );
   }
 }
-

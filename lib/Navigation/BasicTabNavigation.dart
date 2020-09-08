@@ -1,8 +1,8 @@
-import 'package:fluix/Navigation/demoScreen/DemoScreen1.dart';
-import 'package:fluix/Navigation/demoScreen/DemoScreen2.dart';
+import 'package:fluix/DemoScreens/DemoScreen1.dart';
+import 'package:fluix/DemoScreens/DemoScreen2.dart';
 import 'package:flutter/material.dart';
 
-import 'demoScreen/DemoScreen3.dart';
+import 'package:fluix/DemoScreens/DemoScreen3.dart';
  class BasicTabNavigation extends StatelessWidget {
    static final String path = "lib/Navigation/BasicTabNavigation.dart";
    @override
