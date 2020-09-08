@@ -36,6 +36,16 @@ dependencies:
   swipedetector: ^1.2.0
   flare_flutter: ^2.0.6
   smart_flare: ^0.2.9+1
+  line_awesome_icons: ^1.0.4+2
+  flutter_screenutil:
+  animated_theme_switcher: ^1.0.7
+  font_awesome_flutter: ^8.8.1
+  liquid_swipe:
+  intro_views_flutter: ^2.8.1
+  nice_intro: ^0.1.4
+
+
+
 
 
 dev_dependencies:

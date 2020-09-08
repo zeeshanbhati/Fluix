@@ -56,5 +56,55 @@ const FOOD_DATA = [
 
 
 List<String> imagesSource = [
-  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/Login%20Background%2Fgrass.jpg?alt=media"
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/Login%20Background%2Fgrass.jpg?alt=media",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/Login%20Background%2FRonaldo.jpg?alt=media",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/Login%20Background%2Fcristiano-ronaldo%20(2).jpg?alt=media",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/Login%20Background%2FCristiano-Ronaldo-Goal-Celebration-HD-Wallpaper01-1.jpg?alt=media",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/Login%20Background%2FFB_IMG_1471525253826.jpg?alt=media&"
 ];
+
+List<String> profilePics = [
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/Profile%20Pics%2Fgirl%201.jpg?alt=media",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/Profile%20Pics%2Fgirl%202.jpg?alt=media",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/Profile%20Pics%2Fgirl%203.jpg?alt=media",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/Profile%20Pics%2Fgirl%204.jpg?alt=media",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/Profile%20Pics%2Fgirl%205.jpg?alt=media",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/Profile%20Pics%2Fgirl%206.jpg?alt=media",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/Profile%20Pics%2Fgirl%207.jpg?alt=media",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/Profile%20Pics%2Fgirl%208.jpg?alt=media",
+];
+
+List<String> Food_Title= [
+  "Burger",
+  "Pizza",
+  "Sandwich",
+  "Noodles",
+  "French Fries",
+  "Cola",
+  "Ice Cream",
+  "Wrap",
+];
+List<String> Food_Price = [
+  "Rs.50",
+  "Rs.100",
+  "Rs.30",
+  "Rs.30",
+  "Rs.50",
+  "Rs.20",
+  "Rs.10",
+  "Rs.70",
+  "Rs.60"
+];
+
+List<String>  food_images = [
+  "images/burger.png",
+  "images/pizza.png",
+  "images/sandwich.png",
+  "images/noodles.png",
+  "images/fries.png",
+  "images/cola.png",
+  "images/ice_cream.png",
+  "images/wrap.png"
+];
+
+
