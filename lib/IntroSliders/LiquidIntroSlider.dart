@@ -69,21 +69,24 @@ class LiquidIntroSlider extends StatelessWidget {
               Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
                 style: GoogleFonts.lato(color: Colors.white,textStyle: TextStyle(fontWeight: FontWeight.w400,letterSpacing: 1.0,wordSpacing: 2.0)),),
               Expanded(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    GestureDetector(
-                      child: Icon(
-                        Icons.check,
-                        color: Colors.white,
-                        size: 30,
-                      ),
-                      onTap: (){
-                        ///Your Activity goes here
-                        },
-                    )
-                  ],
+                child: Padding(
+                  padding: EdgeInsets.only(bottom:screenWidth/10,right: screenWidth/30),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      GestureDetector(
+                        child: Icon(
+                          Icons.check,
+                          color: Colors.white,
+                          size: 30,
+                        ),
+                        onTap: (){
+                          ///Your Activity goes here
+                          },
+                      )
+                    ],
+                  ),
                 ),
               )
             ],

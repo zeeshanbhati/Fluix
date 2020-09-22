@@ -1,4 +1,5 @@
 import 'package:fluix/Components/CustomAppBar.dart';
+import 'package:fluix/Utils/Theme.dart';
 import "package:flutter/material.dart";
 import 'package:fluix/Utils/constants.dart';
 class RecycleListView extends StatelessWidget {
@@ -44,9 +45,9 @@ class RecycleListView extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(Food_Title[index],style: TextStyle(color: Colors.black,fontSize: screenHeight/40),),
+                          Text(Food_Title[index],style: TextStyle(color: enableDarkMode ? Colors.white : Colors.black,fontSize: screenHeight/40),),
                           SizedBox(height: 10,),
-                          Text(Food_Price[index],style: TextStyle(color: Colors.black,),),
+                          Text(Food_Price[index],style: TextStyle(color: enableDarkMode ? Colors.white : Colors.black,),),
                         ],
                       ),
                     )

@@ -41,11 +41,15 @@ Widget dashboardCard(String text, String img, BuildContext context) {
                         child: Opacity(
                             opacity: 0.6,
                             child: Container(
+
                               child: FittedBox(
                                 fit: BoxFit.fitWidth,
+
                                 child: FadeInImage.assetNetwork(
                                   placeholder: "images/logo.png",
                                   image: img,
+                                  height: screenSize.height/4,
+                                  width: screenSize.width*0.1,
                                 ),
                               ),
                             )),

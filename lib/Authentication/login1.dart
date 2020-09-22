@@ -89,7 +89,7 @@ class _Login1State extends State<Login1> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.all(screenSize.height / 20),
+                  padding: EdgeInsets.only(top:screenSize.height/40,left: screenSize.width/10),
                   child: Text("New\nAccount",
                       style: GoogleFonts.lato(
                         textStyle: TextStyle(
@@ -118,7 +118,7 @@ class _Login1State extends State<Login1> {
                 Center(
                   child: Container(
                     width: screenSize.width / 1.2,
-                    height: 20.0,
+                    height: screenSize.height/30,
                     child: InkWell(
                       child: Text(
                         "Forget Password ?",
@@ -132,7 +132,7 @@ class _Login1State extends State<Login1> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: EdgeInsets.only(top:10.0),
                   child: Center(
                       child: RoundedButton(
                     onPressed: null,

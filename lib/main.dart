@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:dynamic_theme/dynamic_theme.dart';
+import 'package:flare_flutter/flare_actor.dart';
 import 'package:fluix/Authentication/AnimatedLogin.dart';
 import 'package:fluix/Authentication/AnimatedSignUp.dart';
 import 'package:fluix/Authentication/Login1.dart';
@@ -29,7 +30,7 @@ void main() {
         theme: enableDarkMode ? darkTheme(context) : lightTheme(context),
         initialRoute: '/',
         routes: {
-          '/': (context) => Home(),
+          '/': (context) => Splash(),
           AnimatedLogin.path: (context) => AnimatedLogin(),
           AnimatedSignUp.path: (context) => AnimatedSignUp(),
           Login1.path: (context) => Login1(),
@@ -65,13 +66,18 @@ class _SplashState extends State<Splash> {
 
   @override
   Widget build(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth  = MediaQuery.of(context).size.width;
     return Scaffold(
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Image.asset("images/logo.png"),
+            Container(
+              height:screenHeight/2,
+                width: screenWidth/2,
+                child: FlareActor('images/flx_flare.flr', animation: "Unfold",)),
             SizedBox(height: 25,),
             Text("FLUIX", style: TextStyle(color: Colors.lightBlueAccent, fontSize: 30),),
             SizedBox(height: 20,),

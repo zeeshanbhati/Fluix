@@ -107,4 +107,14 @@ List<String>  food_images = [
   "images/wrap.png"
 ];
 
+List<String> dashboardAssets = [
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/DashBoard%20Assets%2Fcalendar.png?alt=media&",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/DashBoard%20Assets%2Ffestival.png?alt=media&",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/DashBoard%20Assets%2Ffood.png?alt=media&",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/DashBoard%20Assets%2Fmap.png?alt=media&",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/DashBoard%20Assets%2Fnotification.png?alt=media&",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/DashBoard%20Assets%2Fsetting.png?alt=media&",
+  "https://firebasestorage.googleapis.com/v0/b/fluix-c6a93.appspot.com/o/DashBoard%20Assets%2Ftodo.png?alt=media&",
+];
+
 

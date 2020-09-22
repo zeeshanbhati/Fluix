@@ -190,6 +190,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "5.2.1"
+  file_picker:
+    dependency: "direct main"
+    description:
+      name: file_picker
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
   firebase:
     dependency: transitive
     description:
@@ -265,6 +272,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.3"
+  flutter_fluid_slider:
+    dependency: "direct main"
+    description:
+      name: flutter_fluid_slider
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.3"
+  flutter_plugin_android_lifecycle:
+    dependency: transitive
+    description:
+      name: flutter_plugin_android_lifecycle
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.9"
   flutter_screenutil:
     dependency: "direct main"
     description:
@@ -272,6 +293,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.3.1"
+  flutter_slider_drawer:
+    dependency: "direct main"
+    description:
+      name: flutter_slider_drawer
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.3"
   flutter_spinkit:
     dependency: "direct main"
     description:
@@ -300,6 +328,13 @@ packages:
     dependency: "direct main"
     description:
       name: foldable_sidebar
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
+  folding_cell:
+    dependency: "direct main"
+    description:
+      name: folding_cell
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
@@ -401,6 +436,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.1"
+  local_auth:
+    dependency: "direct main"
+    description:
+      name: local_auth
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.6.3+1"
   matcher:
     dependency: transitive
     description:
@@ -443,6 +485,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.9.3"
+  page_transition:
+    dependency: "direct main"
+    description:
+      name: page_transition
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.6"
   path:
     dependency: transitive
     description:
@@ -581,6 +630,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  slider_button:
+    dependency: "direct main"
+    description:
+      name: slider_button
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.6.0"
   smart_flare:
     dependency: "direct main"
     description:
@@ -693,6 +749,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.8"
+  vibration:
+    dependency: transitive
+    description:
+      name: vibration
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.5.0"
   watcher:
     dependency: transitive
     description:

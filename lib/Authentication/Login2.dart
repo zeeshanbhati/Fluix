@@ -109,7 +109,7 @@ class _Login2State extends State<Login2> {
 
   _getTextFields(Size screenSize) {
     return Expanded(
-      flex: 4,
+      flex: 6,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [

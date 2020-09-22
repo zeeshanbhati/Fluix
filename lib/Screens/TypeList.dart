@@ -19,12 +19,10 @@ class _TypeListState extends State<TypeList> {
   void initState() {
     if (widget.type == "Authentication") {
       ui1 = authentication;
-    } else if (widget.type == "Settings") {
-      ui1 = settings;
-    } else if (widget.type == "Profile") {
-      ui1 = profile;
-    } else if (widget.type == "Dashboard") {
-      ui1 = dashboard;
+    } else if (widget.type == "Settings/Profile") {
+      ui1 = settings_profile;
+    } else if (widget.type == "Introsliders") {
+      ui1 = introslider;
     } else if (widget.type == "Drawer") {
       ui1 = drawer;
     } else if (widget.type == "Navigation") {
@@ -33,6 +31,8 @@ class _TypeListState extends State<TypeList> {
       ui1 = lists;
     } else if (widget.type == "Grids") {
       ui1 = grids;
+    } else if (widget.type == "Miscellaneous"){
+      ui1 = miscellaneous;
     }
     super.initState();
   }

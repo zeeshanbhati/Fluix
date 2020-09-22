@@ -82,56 +82,59 @@ class _SignUp1State extends State<SignUp1> {
                   ),
                   color: Colors.white,
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.all(screenSize.height / 20),
-                      child: Text("New\nAccount",
-                          style: GoogleFonts.lato(
-                            textStyle: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
-                                fontSize: screenSize.height / 30),
-                          )),
-                    ),
-                    Container(
-                      child: MyTextFormField(
-                        hintText: "Email",
-                        icon: Icons.email,
-                        //TODO: Form can be used for this field check then customtextfile for the info
-                        //TODO: save function ,validator ,is email and is password
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.vertical,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.all(screenSize.height / 20),
+                        child: Text("New\nAccount",
+                            style: GoogleFonts.lato(
+                              textStyle: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: screenSize.height / 30),
+                            )),
                       ),
-                    ),
-                    Container(
-                      child: MyTextFormField(
-                        hintText: "Username",
-                        icon: Icons.person_pin,
-                        //TODO: Form can be used for this field check then customtextfile for the info
-                        //TODO: save function ,validator ,is email and is password
+                      Container(
+                        child: MyTextFormField(
+                          hintText: "Email",
+                          icon: Icons.email,
+                          //TODO: Form can be used for this field check then customtextfile for the info
+                          //TODO: save function ,validator ,is email and is password
+                        ),
                       ),
-                    ),
-                    Container(
-                      child: MyTextFormField(
-                        hintText: "Password",
-                        icon: Icons.vpn_key,
-                        isPassword: true,
-                        //TODO: Form can be used for this field check then customtextfile for the info
-                        //TODO: save function ,validator ,is email and is password
+                      Container(
+                        child: MyTextFormField(
+                          hintText: "Username",
+                          icon: Icons.person_pin,
+                          //TODO: Form can be used for this field check then customtextfile for the info
+                          //TODO: save function ,validator ,is email and is password
+                        ),
                       ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: Center(
-                          child: RoundedButton(
-                        onPressed: () {
-                          //TODO: signup process here
-                        },
-                        title: "Sign up",
-                        colour: Colors.deepOrangeAccent,
-                      )),
-                    )
-                  ],
+                      Container(
+                        child: MyTextFormField(
+                          hintText: "Password",
+                          icon: Icons.vpn_key,
+                          isPassword: true,
+                          //TODO: Form can be used for this field check then customtextfile for the info
+                          //TODO: save function ,validator ,is email and is password
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Center(
+                            child: RoundedButton(
+                          onPressed: () {
+                            //TODO: signup process here
+                          },
+                          title: "Sign up",
+                          colour: Colors.deepOrangeAccent,
+                        )),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
