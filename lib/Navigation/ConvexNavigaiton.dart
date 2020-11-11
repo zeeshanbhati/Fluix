@@ -6,7 +6,7 @@ import 'package:fluix/DemoScreens/DemoScreen2.dart';
 import 'package:fluix/DemoScreens/DemoScreen3.dart';
 import 'package:fluix/DemoScreens/DemoScreen4.dart';
 
-//TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN
+/*TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN*/
 
 class ConvexNavigation extends StatefulWidget {
   static final String path = 'lib/Navigation/ConvexNavigation';

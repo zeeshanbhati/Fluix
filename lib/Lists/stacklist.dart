@@ -1,10 +1,10 @@
 import 'package:fluix/Utils/constants.dart';
 import 'package:flutter/material.dart';
 
-//TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN
+/*TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN*/
 
 class StackList extends StatefulWidget {
-  static final String path = "lib/Lists/StackList.dart";
+  static final String path = "lib/Lists/stacklist.dart";
   @override
   _StackListState createState() => _StackListState();
 }

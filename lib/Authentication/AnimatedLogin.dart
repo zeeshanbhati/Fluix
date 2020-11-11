@@ -2,7 +2,9 @@ import 'package:fluix/Authentication/AnimatedSignUp.dart';
 import 'package:flutter/material.dart';
 import '../Components/form_box.dart';
 
-//TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN
+
+/*TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN*/
+
 
 class AnimatedLogin extends StatefulWidget {
   static final String path = "lib/Authentication/AnimatedLogin.dart";

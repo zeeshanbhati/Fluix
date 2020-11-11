@@ -6,8 +6,11 @@ import 'package:flutter/services.dart';
 import 'package:fluix/Utils/Theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+/*TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN*/
+
+
 class IntroSlider2 extends StatefulWidget {
-  static final String path = "lib/Introsliders/IntroSlider2.dart";
+  static final String path = "lib/IntroSliders/IntroSlider2.dart";
   @override
   _IntroSlider2State createState() => _IntroSlider2State();
 }

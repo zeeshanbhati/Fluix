@@ -4,6 +4,9 @@ import 'package:fluix/DemoScreens/DemoScreen1.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
+/*TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN*/
+
+
 class PagesTransitions extends StatefulWidget {
   static final String path = "lib/Miscallaneous/PagesTransitions.dart";
   @override

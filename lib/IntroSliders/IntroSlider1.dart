@@ -7,7 +7,7 @@ import 'package:fluix/Utils/Theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Introslider1 extends StatefulWidget {
-  static final String path = "lib/Introsliders/Introslider1.dart";
+  static final String path = "lib/IntroSliders/IntroSlider1.dart";
   @override
   _Introslider1State createState() => _Introslider1State();
 }

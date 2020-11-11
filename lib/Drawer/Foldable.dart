@@ -5,10 +5,10 @@ import 'package:fluix/Utils/Theme.dart';
 import "package:flutter/material.dart";
 import "package:foldable_sidebar/foldable_sidebar.dart";
 
-//TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN
+/*TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN*/
 
 class Foldable extends StatefulWidget {
-  static final String path = "lib/Drawers/Foldable.dart";
+  static final String path = "lib/Drawer/Foldable.dart";
   @override
   _FoldableState createState() => _FoldableState();
 }

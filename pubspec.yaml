@@ -50,6 +50,11 @@ dependencies:
   flutter_fluid_slider: ^1.0.2
   flutter_slider_drawer: ^1.0.3
   slider_button: ^0.6.0
+  argon_buttons_flutter: ^1.0.6
+  fluttertoast: ^7.1.1
+  animated_floatactionbuttons:
+  url_launcher:
+  carousel_slider:
 
 
 
@@ -66,6 +71,15 @@ flutter:
 
   assets:
     - images/
+    - lib/Authentication/
+    - lib/Dashboard/
+    - lib/Drawer/
+    - lib/Grids/
+    - lib/IntroSliders/
+    - lib/Lists/
+    - lib/Miscellaneous/
+    - lib/Navigation/
+    - lib/Settings/
   
   fonts:
     - family: Dosis

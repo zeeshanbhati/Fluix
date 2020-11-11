@@ -1,8 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+/*TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN*/
+
+
 class CustomDialogAlert extends StatelessWidget {
-  static final String path = "lib/Miscellaneous/CustomDialogBox";
+  static final String path = "lib/Miscellaneous/CustomDialogBox.dart";
   CustomDialogAlert({this.title, this.desc, this.buttontxt, this.imagepath});
   final String title,desc,buttontxt,imagepath;
 

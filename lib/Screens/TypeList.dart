@@ -34,6 +34,9 @@ class _TypeListState extends State<TypeList> {
     } else if (widget.type == "Miscellaneous"){
       ui1 = miscellaneous;
     }
+    else if(widget.type == "Dashboard"){
+      ui1 = dashboard;
+    }
     super.initState();
   }
 
@@ -83,7 +86,7 @@ Widget _buildItem(Items item, BuildContext context) {
           icon: Icon(Icons.code),
           onPressed: () {
             Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => PreviewCode(page: item.page)));
+                builder: (context) => PreviewCode(page: item.page,path: item.path)));
           },
         ),
       ),

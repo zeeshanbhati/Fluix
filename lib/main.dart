@@ -7,6 +7,7 @@ import 'package:fluix/Authentication/Login1.dart';
 import 'package:fluix/Authentication/Login2.dart';
 import 'package:fluix/Authentication/SignUp1.dart';
 import 'package:fluix/Authentication/SignUp2.dart';
+import 'package:fluix/Authentication/Signup4.dart';
 import 'package:fluix/Authentication/Simple.dart';
 import 'package:fluix/Authentication/SimpleS.dart';
 import 'package:fluix/DemoScreens/DemoScreen1.dart';
@@ -43,6 +44,7 @@ void main() {
           DemoScreen2.path: (context) => DemoScreen2(),
           DemoScreen3.path: (context) => DemoScreen3(),
           DemoScreen4.path: (context) => DemoScreen4(),
+          SignUp4.path:(context) => SignUp4()
         },
       ),
     ),

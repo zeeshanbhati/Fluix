@@ -1,10 +1,13 @@
 import 'package:fluix/Authentication/Login2.dart';
 import 'package:flutter/material.dart';
 
-//TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN
+/*
+/*TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN*/
+*/
 
 class SignUp2 extends StatefulWidget {
-  static final String path = "lib/Authentication/Signup2";
+  static final String path = "lib/Authentication/SignUp2.dart";
+                              
   @override
   _SignUp2State createState() => _SignUp2State();
 }

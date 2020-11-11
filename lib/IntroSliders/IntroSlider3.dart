@@ -4,8 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:intro_views_flutter/Models/page_view_model.dart';
 import 'package:intro_views_flutter/intro_views_flutter.dart';
 
+/*TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN*/
+
+
 class IntroSlider3 extends StatelessWidget {
-  static final String path = "lib/Introsliders/IntroSlider3.dart";
+  static final String path = "lib/IntroSliders/IntroSlider3.dart";
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;

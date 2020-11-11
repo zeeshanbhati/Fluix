@@ -6,10 +6,10 @@ import 'package:fluix/Authentication/SignUp1.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-//TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN
+/*TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN*/
 
 class Home1 extends StatefulWidget {
-  static final String path = 'lib/Authentication/Home1';
+  static final String path = 'lib/Authentication/home1.dart';
   @override
   _Home1State createState() => _Home1State();
 }

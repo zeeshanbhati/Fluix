@@ -4,10 +4,10 @@ import 'package:fluix/DemoScreens/DemoScreen3.dart';
 import 'package:flutter/material.dart';
 import 'package:hidden_drawer_menu/hidden_drawer_menu.dart';
 
-//TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN
+/*TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN*/
 
 class Drawer1 extends StatelessWidget {
-  static final String path = "lib/Drawers/HiddenDrawer.dart";
+  static final String path = "lib/Drawer/Hidden.dart";
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

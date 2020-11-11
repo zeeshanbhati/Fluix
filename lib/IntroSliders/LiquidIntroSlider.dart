@@ -7,7 +7,7 @@ import 'package:liquid_swipe/page.dart';
 
 class LiquidIntroSlider extends StatelessWidget {
 
-  static final String path = "lib/IntroSlider/LiquidIntroSlider.dart";
+  static final String path = "lib/IntroSliders/LiquidIntroSlider.dart";
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;

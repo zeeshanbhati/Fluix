@@ -11,7 +11,7 @@ Widget kTextField(
       onChanged: (value) {
         textField = value;
       },
-      keyboardType: TextInputType.number,
+      keyboardType: TextInputType.text,
       style: TextStyle(color: enableDarkMode ? Colors.teal : Colors.blue),
       decoration: InputDecoration(
         filled: true,

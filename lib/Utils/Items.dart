@@ -1,10 +1,15 @@
-import 'package:file_picker/file_picker.dart';
 import 'package:fluix/Authentication/AnimatedLogin.dart';
 import 'package:fluix/Authentication/Login2.dart';
 import 'package:fluix/Authentication/Login3.dart';
+import 'package:fluix/Authentication/Login4.dart';
+import 'package:fluix/Authentication/Login5.dart';
 import 'package:fluix/Authentication/Simple.dart';
 import 'package:fluix/Authentication/home1.dart';
+import 'package:fluix/Dashboard/BankDashBoard.dart';
+import 'package:fluix/Dashboard/CardDashboard.dart';
 import 'package:fluix/Dashboard/Dashboard1.dart';
+import 'package:fluix/Dashboard/Dashboard2.dart';
+import 'package:fluix/Dashboard/Dashboard3.dart';
 import 'package:fluix/Drawer/AwesomeSliderDrawer.dart';
 import 'package:fluix/Drawer/Foldable.dart';
 import 'package:fluix/Drawer/Hidden.dart';
@@ -36,6 +41,7 @@ import 'package:fluix/Navigation/ConvexNavigaiton.dart';
 import 'package:fluix/Navigation/CurvedNavigation.dart';
 import 'package:fluix/Navigation/GoogleBar.dart';
 import 'package:fluix/Settings/Setting1.dart';
+import 'package:fluix/Settings/Setting3.dart';
 import 'package:fluix/Settings/Settings2.dart';
 import 'package:flutter/material.dart';
 
@@ -52,7 +58,9 @@ List<Items> authentication = [
   Items("Animated", AnimatedLogin(), AnimatedLogin.path),
   Items("Card Based", Home1(), Home1.path),
   Items("Authentication 4", Login2(), Login2.path),
-  Items("Login 3", AuthThreePage(), AuthThreePage.path)
+  Items("Login 3", AuthThreePage(), AuthThreePage.path),
+  Items("Login 4", Login4(), Login4.path),
+  Items("Login 5", Login5(), Login5.path),
 
 ];
 
@@ -88,8 +96,15 @@ List<Items> grids = [
 List<Items> settings_profile = [
   Items("Settings 1", Profile1(), Profile1.path),
   Items("Settings 2",Settings2(),Settings2.path),
-  Items('DashBoard 1',SimpleDashBoard(),SimpleDashBoard.path),
+  Items("Settings 3", Settings3(), Settings3.path),
+];
 
+List<Items> dashboard = [
+  Items("Dashboard 1", SimpleDashBoard(), SimpleDashBoard.path),
+  Items("Card DashBoard", CardDashboard(), CardDashboard.path),
+  Items("Dashboard 2", Dashboard2(), Dashboard2.path),
+   Items('Bank DashBoard',BankDashBoard(),BankDashBoard.path),
+   Items('DashBoard 3',Dashboard3(),Dashboard3.path),
 ];
 
 
@@ -112,7 +127,6 @@ List<Items> miscellaneous = [
   Items("File Picker",PickFiles(),PickFiles.path),
   Items("Fluid Slider",AwesomeFluidSlider(),AwesomeFluidSlider.path),
   Items("Apple Slider Button",AppleSliderButton(),AppleSliderButton.path)
-
 
 ];
 

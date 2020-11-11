@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:nice_intro/intro_screen.dart';
 import 'package:nice_intro/intro_screens.dart';
 
+/*TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN*/
+
+
 class IntroSlider4 extends StatelessWidget {
-  static final String path = "lib/IntroSlider/IntroSlider4.dart";
+  static final String path = "lib/IntroSliders/IntroSlider4.dart";
   @override
   Widget build(BuildContext context) {
     List<IntroScreen> screens=[

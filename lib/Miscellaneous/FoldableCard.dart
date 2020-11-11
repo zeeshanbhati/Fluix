@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:folding_cell/folding_cell.dart';
 
+/*TODO: PLEASE MAKE SURE TO IMPORT ALL THE PACKAGES & FILES AS SHOWN ABOVE YOU CAN REPLACE THE DEMO SCREENS WITH YOUR SCREEN*/
+
+
 
 class FoldableCard extends StatelessWidget {
   static final String path = "lib/Miscellaneous/FoldableCard.dart";
