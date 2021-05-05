@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Login5 extends StatefulWidget {
-  static final String path = "lib/authentication/Login5.dart";
+  static final String path = "lib/Authentication/Login5.dart";
   @override
   _Login5State createState() => new _Login5State();
 }

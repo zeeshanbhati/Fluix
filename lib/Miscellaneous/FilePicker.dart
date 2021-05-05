@@ -29,35 +29,7 @@ class _PickFilesState extends State<PickFiles> {
     _controller.addListener(() => _extension = _controller.text);
   }
 
-  // void _openFileExplorer() async {
-  //   if (_pickingType != FileType.any || _hasValidMime) {
-  //     setState(() => _loadingPath = true);
-  //     try {
-  //       if (_multiPick) {
-  //         _path = null;
-  //         // _paths = await FilePicker.getMultiFilePath(
-  //         //   type: _pickingType,  );
-  //         FilePickerResult result = await FilePicker.platform.pickFiles(allowMultiple: true);
-  //         if(result!=null){
-  //
-  //         }
-  //       } else {
-  //         _paths = null;
-  //         _path = await FilePicker.getFilePath(
-  //           type: _pickingType, );
-  //       }
-  //     } on PlatformException catch (e) {
-  //       print("Unsupported operation" + e.toString());
-  //     }
-  //     if (!mounted) return;
-  //     setState(() {
-  //       _loadingPath = false;
-  //       _fileName = _path != null
-  //           ? _path.split('/').last
-  //           : _paths != null ? _paths.keys.toString() : '...';
-  //     });
-  //   }
-  // }
+
 
   void _openFileExplorer() async {
     if(_pickingType != FileType.custom || _hasValidMime){
