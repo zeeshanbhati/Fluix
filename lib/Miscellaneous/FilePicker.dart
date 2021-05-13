@@ -1,3 +1,4 @@
+import 'package:fluix/Components/CustomAppBar.dart';
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/services.dart';
@@ -56,8 +57,9 @@ class _PickFilesState extends State<PickFiles> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text("FilePickerApp"),
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(56),
+          child: CustomAppBar(title: "File Picker"),
         ),
         body: Container(
           child: Center(
@@ -67,7 +69,7 @@ class _PickFilesState extends State<PickFiles> {
                     padding: const EdgeInsets.only(top: 50.0, bottom: 20.0),
                     child: new RaisedButton(
                       onPressed: () => _openFileExplorer(),
-                      child: new Text("Open file picker"),
+                      child: new Text("Open file picker", style: TextStyle(color: Colors.white),),
                     ),
                   ),
                   new Builder(

@@ -113,14 +113,8 @@ class _PreviewCodeState extends State<PreviewCode> {
       FloatingActionButton(
         heroTag: "copy",
         child: Icon(Icons.content_copy),
-        tooltip: 'Copy code link to clipboard',
-        // onPressed: () {
-          // await Clipboard.setData(ClipboardData(text: "https://github.com/zeeshanbhati/Fluix/blob/master/${widget.path}"));
-          // Scaffold.of(context).showSnackBar(SnackBar(
-          //   content: Text('Code link copied to Clipboard!'),
-          // ));
-        // },
-        onPressed: () => Share.share("https://github.com/zeeshanbhati/Fluix/blob/master/${widget.path}"),
+        tooltip: 'Share the code',
+        onPressed: () => Share.share("Check this awesome UI which I found on FLUIX 💙\n https://github.com/zeeshanbhati/Fluix/blob/master/${widget.path}"),
       ),
       FloatingActionButton(
         heroTag: "open",
