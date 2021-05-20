@@ -48,7 +48,7 @@ You can get awesome static as well as animated UI templates which you can use in
 | ------ | ------ |
 | <img src="screenshots/simplelogin.jpg" height="480px"> <img src="screenshots/simplesignup.jpg" height="480px"> | [Simple Login](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/Simple.dart) <br> [Simple Signup](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/SimpleS.dart) |
 | <img src="screenshots/animatedlogin.gif" height="480px"> | [Animated Login](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/AnimatedLogin.dart) <br> [Animated Signup](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/AnimatedSignUp.dart) |
-| <img src="screenshots/cardauth.jpg" height="480px"> <img src="screenshots/cardlogin.jpg" height="480px"> <img src="screenshots/cardsignup.jpg" height="480px"> | [Card Based](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/home1.dart) <br> [Card Based Login](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/Login1.dart) <br> [Card Based Signup](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/SignUp1.dart) |
+| <img src="screenshots/cardauth.jpg" height="480px"> <img src="screenshots/cardlogin.jpg" height="480px"> <img src="screenshots/cardsignup.jpg" height="480px"> | [Card Based](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/home1.dart) <br> [Card Based Login](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/login1.dart) <br> [Card Based Signup](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/signUp1.dart) |
 | <img src="screenshots/designedlogin.jpg" height="480px"> <img src="screenshots/designedsignup.jpg" height="480px"> | [Designed Login](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/Login2.dart) <br> [Designed Signup](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/SignUp2.dart) |
 | <img src="screenshots/minimalauth.jpg" height="480px"> <img src="screenshots/minimallogin.jpg" height="480px"> <img src="screenshots/minimalsignup.jpg" height="480px"> | [Minimal Authentication](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/Login3.dart) |
 | <img src="screenshots/elegantlogin.jpg" height="480px"> <img src="screenshots/elegantsignup.jpg" height="480px"> | [Elegant Login](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/Login4.dart) <br> [Elegant Signup](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/SignUp4.dart) |
@@ -70,7 +70,7 @@ You can get awesome static as well as animated UI templates which you can use in
 | <img src="screenshots/curvednavigation.jpg" height="480px"> | [Curved](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Navigation/CurvedNavigation.dart) |
 | <img src="screenshots/circularnavigation.jpg" height="480px"> | [Circular](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Navigation/CircleBottomBar.dart) |
 | <img src="screenshots/googlenavigation.jpg" height="480px"> | [Google Bar](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Navigation/GoogleBar.dart) |
-| <img src="screenshots/convexednavigation.jpg" height="480px"> | [Convexed](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Navigation) |
+| <img src="screenshots/convexednavigation.jpg" height="480px"> | [Convexed](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Navigation/ConvexNavigation.dart) |
 | <img src="screenshots/basicnavigation.jpg" height="480px"> | [Basic Tabbed](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Navigation/BasicTabNavigation.dart) |
 <br>
 
@@ -129,6 +129,6 @@ You can get awesome static as well as animated UI templates which you can use in
 | <img src="screenshots/foldablecard.gif" height="480px"> | [Foldable Card](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Miscellaneous/FoldableCard.dart) |
 | <img src="screenshots/pagetransitions.jpg" height="480px"> | [Various Page Transitions](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Miscellaneous/PageTransitions.dart) |
 | <img src="screenshots/filepicker.jpg" height="480px"> | [File Picker](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Miscellaneous/FilePicker.dart) |
-| <img src="screenshots/fluidslider.gif" height="480px"> | [Fluid Slider](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Miscellaneous/awesomeFluidSlider.dart) |
+| <img src="screenshots/fluidslider.gif" height="480px"> | [Fluid Slider](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Miscellaneous/AwesomeFluidSlider.dart) |
 | <img src="screenshots/appleargonbuttons.gif" height="480px"> | [Apple Slider and Argon Buttons](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Miscellaneous/AppleSliderButton.dart) |
 <br>
