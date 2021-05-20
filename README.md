@@ -20,6 +20,27 @@ You can get awesome static as well as animated UI templates which you can use in
 
 <br>
 
+## Contributors
+| Artist 😎 | Github :octocat: | Portfolio Site 🔥 |
+| ------ | ------ | ------ |
+| [Ayush Singla](https://in.linkedin.com/in/ayush-singla-797b881a0) | [ayu913](https://github.com/ayu913) | - |
+| [Tanha Patel](https://www.linkedin.com/in/tanharpatel) | [tanharpatel](https://github.com/tanharpatel) | [Tanha's Portfolio](http://tanharpatel.tech) |
+| [Zeeshan Bhati](https://in.linkedin.com/in/zeeshanbhati99) | [zeeshanbhati](https://github.com/zeeshanbhati) | [Zeeshan's Portfolio](https://zeeshanbhati.github.io) |
+<br>
+
+## Open Source Contributions
+<div align="center">
+
+*If you want to add any feature or if you found a bug, feel free to open an issue.*
+
+[<img src="https://img.shields.io/badge/Star-If_Liked-%23FF0000.svg?&style=flat&logoColor=white&color=white"/>](https://github.com/zeeshanbhati/Fluix)
+[<img src="https://img.shields.io/badge/Fork-If_you_found_interesting-%23FF0000.svg?&style=flat&logoColor=white&color=white"/>](https://github.com/zeeshanbhati/Fluix) 
+
+[<img src="https://img.shields.io/badge/Query-Ask_Us_Anything-blue"/>](https://github.com/zeeshanbhati/Fluix/issues/new) 
+
+<br>
+</div>
+
 ## Authentication UIs
 | Glimpse 📱 | Code 📄 |
 | ------ | ------ |
@@ -110,23 +131,3 @@ You can get awesome static as well as animated UI templates which you can use in
 | <img src="screenshots/appleargonbuttons.gif" height="480px"> | [Apple Slider and Argon Buttons](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Miscellaneous/AppleSliderButton.dart) |
 <br>
 
-## Contributors
-| Artist 😎 | Github :octocat: | Portfolio Site 🔥 |
-| ------ | ------ | ------ |
-| [Ayush Singla](https://in.linkedin.com/in/ayush-singla-797b881a0) | [ayu913](https://github.com/ayu913) | - |
-| [Tanha Patel](https://www.linkedin.com/in/tanharpatel) | [tanharpatel](https://github.com/tanharpatel) | [Tanha's Portfolio](http://tanharpatel.tech) |
-| [Zeeshan Bhati](https://in.linkedin.com/in/zeeshanbhati99) | [zeeshanbhati](https://github.com/zeeshanbhati) | [Zeeshan's Portfolio](https://zeeshanbhati.github.io) |
-<br>
-
-## Open Source Contributions
-<div align="center">
-
-*If you want to add any feature or if you found a bug, feel free to open an issue.*
-
-[<img src="https://img.shields.io/badge/Star-If_Liked-%23FF0000.svg?&style=flat&logoColor=white&color=white"/>](https://github.com/zeeshanbhati/Fluix)
-[<img src="https://img.shields.io/badge/Fork-If_you_found_interesting-%23FF0000.svg?&style=flat&logoColor=white&color=white"/>](https://github.com/zeeshanbhati/Fluix) 
-
-[<img src="https://img.shields.io/badge/Query-Ask_Us_Anything-blue"/>](https://github.com/zeeshanbhati/Fluix/issues/new) 
-
-<br>
-</div>
