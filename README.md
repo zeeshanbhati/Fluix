@@ -37,12 +37,14 @@ You can get awesome static as well as animated UI templates which you can use in
 [<img src="https://img.shields.io/badge/Fork-If_you_found_interesting-%23FF0000.svg?&style=flat&logoColor=white&color=white"/>](https://github.com/zeeshanbhati/Fluix) 
 
 [<img src="https://img.shields.io/badge/Query-Ask_Us_Anything-blue"/>](https://github.com/zeeshanbhati/Fluix/issues/new) 
-
-<br>
 </div>
+<br>
+
+</div>
+<br>
 
 ## Authentication UIs
-| Glimpse 📱 | Code 📄 |
+| Glimpse 📱 <img width="2000px"/> | Code 📄 <img width="450px"/>|
 | ------ | ------ |
 | <img src="screenshots/simplelogin.jpg" height="480px"> <img src="screenshots/simplesignup.jpg" height="480px"> | [Simple Login](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/Simple.dart) <br> [Simple Signup](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/SimpleS.dart) |
 | <img src="screenshots/animatedlogin.gif" height="480px"> | [Animated Login](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/AnimatedLogin.dart) <br> [Animated Signup](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Authentication/AnimatedSignUp.dart) |
@@ -53,7 +55,7 @@ You can get awesome static as well as animated UI templates which you can use in
 <br>
 
 ## Drawer UIs
-| Glimpse 📱 | Code 📄 |
+| Glimpse 📱 <img width="2000px"/> | Code 📄 <img width="450px"/>|
 | ------ | ------ |
 | <img src="screenshots/hiddendrawer.gif" height="480px"> | [Hidden](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Drawer/Hidden.dart) |
 | <img src="screenshots/foldabledrawer.gif" height="480px"> | [Foldable](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Drawer/Foldable.dart) |
@@ -63,7 +65,7 @@ You can get awesome static as well as animated UI templates which you can use in
 <br>
 
 ## Bottom Navigation UIs
-| Glimpse 📱 | Code 📄 |
+| Glimpse 📱 <img width="2000px"/> | Code 📄 <img width="450px"/>|
 | ------ | ------ |
 | <img src="screenshots/curvednavigation.jpg" height="480px"> | [Curved](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Navigation/CurvedNavigation.dart) |
 | <img src="screenshots/circularnavigation.jpg" height="480px"> | [Circular](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Navigation/CircleBottomBar.dart) |
@@ -73,7 +75,7 @@ You can get awesome static as well as animated UI templates which you can use in
 <br>
 
 ## List UIs
-| Glimpse 📱 | Code 📄 |
+| Glimpse 📱 <img width="2000px"/> | Code 📄 <img width="450px"/>|
 | ------ | ------ |
 | <img src="screenshots/wheelscrolllist.gif" height="480px"> | [Wheel Scroll](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Lists/WheelScroll.dart) |
 | <img src="screenshots/stackedlist.gif" height="480px"> | [Stacked](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Lists/stacklist.dart) |
@@ -82,14 +84,14 @@ You can get awesome static as well as animated UI templates which you can use in
 <br>
 
 ## Grid UIs
-| Glimpse 📱 | Code 📄 |
+| Glimpse 📱 <img width="2000px"/> | Code 📄 <img width="450px"/>|
 | ------ | ------ |
 | <img src="screenshots/staggeredgrid.gif" height="480px"> | [Staggered](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Grids/Staggered.dart) |
 | <img src="screenshots/animatedgrid.gif" height="480px"> | [Animated](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Grids/AnimatedGrid.dart) |
 <br>
 
 ## Settings and Profile UIs
-| Glimpse 📱 | Code 📄 |
+| Glimpse 📱 <img width="2000px"/> | Code 📄 <img width="450px"/>|
 | ------ | ------ |
 | <img src="screenshots/googlesettings.jpg" height="480px"> | [Google Settings](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Settings/Setting1.dart) |
 | <img src="screenshots/socialprofile.jpg" height="480px"> | [Social Profile](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Settings/Settings2.dart) |
@@ -97,7 +99,7 @@ You can get awesome static as well as animated UI templates which you can use in
 <br>
 
 ## Dashboard UIs
-| Glimpse 📱 | Code 📄 |
+| Glimpse 📱 <img width="2000px"/> | Code 📄 <img width="450px"/>|
 | ------ | ------ |
 | <img src="screenshots/personaliseddashboard.jpg" height="480px"> | [Personalised](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Dashboard/Dashboard1.dart) |
 | <img src="screenshots/carddashboard.jpg" height="480px"> | [Card Dashboard](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Dashboard/CardDashboard.dart) |
@@ -107,7 +109,7 @@ You can get awesome static as well as animated UI templates which you can use in
 <br>
 
 ## Introslider UIs
-| Glimpse 📱 | Code 📄 |
+| Glimpse 📱 <img width="2000px"/> | Code 📄 <img width="450px"/>|
 | ------ | ------ |
 | <img src="screenshots/introslider1.gif" height="480px"> | [Intro Slider 1](https://github.com/zeeshanbhati/Fluix/blob/master/lib/IntroSliders/IntroSlider1.dart) |
 | <img src="screenshots/introslider2.gif" height="480px"> | [Intro Slider 2](https://github.com/zeeshanbhati/Fluix/blob/master/lib/IntroSliders/IntroSlider2.dart) |
@@ -117,7 +119,7 @@ You can get awesome static as well as animated UI templates which you can use in
 <br>
 
 ## Miscellaneous UIs
-| Glimpse 📱 | Code 📄 |
+| Glimpse 📱 <img width="2000px"/> | Code 📄 <img width="450px"/>|
 | ------ | ------ |
 | <img src="screenshots/successdialog.gif" height="480px"> | [Custom Success Dialog](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Miscellaneous/CustomDialogBox.dart) |
 | <img src="screenshots/errordialog.jpg" height="480px"> | [Custom Error Dialog](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Miscellaneous/CustomDialogBox.dart) |
@@ -130,4 +132,3 @@ You can get awesome static as well as animated UI templates which you can use in
 | <img src="screenshots/fluidslider.gif" height="480px"> | [Fluid Slider](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Miscellaneous/awesomeFluidSlider.dart) |
 | <img src="screenshots/appleargonbuttons.gif" height="480px"> | [Apple Slider and Argon Buttons](https://github.com/zeeshanbhati/Fluix/blob/master/lib/Miscellaneous/AppleSliderButton.dart) |
 <br>
-
